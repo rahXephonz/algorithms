@@ -1,0 +1,12 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "main": "./playgrounds/index.js",
+  "repository": "https://github.com/ioofy/algorithms.git",
+  "author": "ioofy <mynev.id@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {}
+}
