@@ -2,10 +2,15 @@
   "name": "algorithms",
   "version": "1.0.0",
   "main": "./playgrounds/index.js",
+  "source": "./playgrounds/maps/index.html",
+  "scripts": {
+    "start": "parcel"
+  },
   "repository": "https://github.com/ioofy/algorithms.git",
   "author": "ioofy <mynev.id@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "parcel": "^2.7.0",
     "typescript": "^4.8.4"
   },
   "dependencies": {}
