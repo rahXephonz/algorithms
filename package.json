@@ -1,7 +1,6 @@
 {
   "name": "algorithms",
   "version": "1.0.0",
-  "main": "./playgrounds/index.js",
   "source": "./playgrounds/maps/index.html",
   "scripts": {
     "start": "parcel"
@@ -13,5 +12,7 @@
     "parcel": "^2.7.0",
     "typescript": "^4.8.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
 }

@@ -1,11 +1,7 @@
 import { User } from "./user";
+import { Company } from "./company";
 
-class GetData extends User {
-  getAllData() {
-    this.insertName();
-  }
-}
+const user = new User();
+const company = new Company();
 
-const getData = new GetData();
-
-getData.getAllData();
+console.log({ company, user });
