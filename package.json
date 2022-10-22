@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "source": "./playgrounds/maps/index.html",
   "scripts": {
-    "start": "parcel"
+    "start": "parcel",
+    "test": "jest"
   },
   "repository": "https://github.com/ioofy/algorithms.git",
   "author": "ioofy <mynev.id@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^29.2.0",
+    "jest": "^29.2.1",
     "parcel": "^2.7.0",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.8.4"
   },
   "dependencies": {

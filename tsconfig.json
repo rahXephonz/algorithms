@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esnext",
+    "target": "esnext",
+    "declaration": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["playgrounds"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "__test__",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
