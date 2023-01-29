@@ -25,6 +25,25 @@ const productObj = [
 // Expected:
 // The value productObj with same location will merge
 
-const mergeDuplicate = () => {
-  return;
+type MergedProduct = {
+  location: string;
+  items: typeof productObj;
+};
+
+export const mergeDuplicate = (obj: typeof productObj) => {
+  const mergedProductObj: Array<MergedProduct> = [];
+  const locationSet = new Set<string>();
+
+  obj.forEach((product) => {
+    if (!locationSet.has(product.location)) {
+      locationSet.add(product.location);
+      mergedProductObj.push({ location: product.location, items: [product] });
+    } else {
+      mergedProductObj
+        .find((p) => p.location === product.location)!
+        .items.push(product);
+    }
+  });
+
+  return mergedProductObj;
 };
