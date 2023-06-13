@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+}
+
+.board-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

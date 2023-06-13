@@ -1,0 +1,19 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "Algo of tictactoe",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Ioofy",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "preact": "^10.6.6",
+    "react": "^18.2.0"
+  }
+}
