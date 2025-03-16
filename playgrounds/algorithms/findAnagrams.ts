@@ -19,7 +19,7 @@ function areArraysEqual(arr1: Array<string>, arr2: Array<string>) {
   return arr1.every((item, index) => item === arr2[index]);
 }
 
-function findAnagrams() {
+export function findAnagrams(str: string, p: string) {
   let splitStr = str.split("");
   let splitP = p.split("");
 
@@ -37,5 +37,3 @@ function findAnagrams() {
 
   return resIndices;
 }
-
-console.log(findAnagrams());

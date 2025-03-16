@@ -37,12 +37,16 @@ export const mergeDuplicate = (obj: typeof productObj) => {
   obj.forEach((product) => {
     if (!locationSet.has(product.location)) {
       locationSet.add(product.location);
-      mergedProductObj.push({ location: product.location, items: [product] });
-    } else {
-      mergedProductObj
-        .find((p) => p.location === product.location)!
-        .items.push(product);
+
+      return mergedProductObj.push({
+        location: product.location,
+        items: [product],
+      });
     }
+
+    return mergedProductObj
+      .find((p) => p.location === product.location)
+      .items.push(product);
   });
 
   return mergedProductObj;

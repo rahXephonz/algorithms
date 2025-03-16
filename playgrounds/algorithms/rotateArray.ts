@@ -12,7 +12,7 @@ const nums = [1, 2, 3, 4, 5, 6, 7];
 // Rotate 3 steps
 const k = 3;
 
-function rotateArray(arr: Array<number>, k: number) {
+export function rotateArray(arr: Array<number>, k: number) {
   k = k % arr.length;
 
   let tempArr = arr.slice(arr.length - k);
@@ -29,5 +29,3 @@ function rotateArray(arr: Array<number>, k: number) {
 
   return arr;
 }
-
-console.log(rotateArray(nums, k));
